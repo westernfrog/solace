@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="sticky inset-x-0 top-0 z-50 lg:px-10 px-6 py-6 mix-blend-difference">
       <nav>
-        <ul className="flex flex-wrap items-center justify-center lg:gap-6 gap-6">
+        <ul className="flex flex-wrap items-center justify-center lg:gap-8 gap-6">
           <li className="group">
             <Link href="/" className="relative text-sm">
               Solace
