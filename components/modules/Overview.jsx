@@ -152,9 +152,9 @@ export default function Overview() {
                     currentScene.name === scene.name
                       ? "bg-light text-black"
                       : "bg-light/20 text-white hover:bg-light hover:text-black"
-                  } transition-all duration-500 ease-in-out rounded-full lg:w-14 w-12 lg:h-14 h-12 flex flex-col items-center justify-center backdrop-blur-xl`}
+                  } transition-all duration-500 ease-in-out rounded-full lg:w-8 w-10 lg:h-8 h-10 flex flex-col items-center justify-center backdrop-blur-xl`}
                 >
-                  <Icon size={24} />
+                  <Icon size={20} />
                   <span className="sr-only text-xs">{scene.name}</span>
                 </button>
               );

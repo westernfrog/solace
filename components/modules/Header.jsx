@@ -18,9 +18,9 @@ export default function Header() {
   return (
     <header className="sticky inset-x-0 top-0 z-50 lg:px-10 px-6 py-6 mix-blend-difference">
       <nav>
-        <ul className="flex flex-wrap items-center justify-center lg:gap-10 gap-6">
+        <ul className="flex flex-wrap items-center justify-center lg:gap-6 gap-6">
           <li className="group">
-            <Link href="/" className="relative">
+            <Link href="/" className="relative text-sm">
               Solace
               <span
                 className={`absolute -bottom-1 left-0 w-full h-px bg-light transition-transform duration-500 ease-in-out transform origin-left ${
@@ -33,7 +33,7 @@ export default function Header() {
           </li>
           {navigation.map((item) => (
             <li key={item.name} className="group">
-              <Link href={item.href} className="relative">
+              <Link href={item.href} className="relative text-sm">
                 {item.name}
                 <span
                   className={`absolute -bottom-1 left-0 w-full h-px bg-light transition-transform duration-500 ease-in-out transform origin-left ${
