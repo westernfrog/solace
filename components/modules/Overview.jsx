@@ -141,7 +141,7 @@ export default function Overview() {
         </audio>
 
         <div className="fixed top-0 bottom-0 right-0">
-          <div className="flex flex-col items-center justify-center gap-4 h-full lg:px-10 px-6">
+          <div className="flex flex-col items-center lg:justify-center justify-end gap-4 h-full lg:px-10 px-6 py-6">
             {scenes.map((scene) => {
               const Icon = scene.icon;
               return (
