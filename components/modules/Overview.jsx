@@ -152,9 +152,9 @@ export default function Overview() {
                     currentScene.name === scene.name
                       ? "bg-light text-black"
                       : "bg-light/20 text-white hover:bg-light hover:text-black"
-                  } transition-all duration-500 ease-in-out rounded-full lg:w-12 w-10 lg:h-12 h-10 flex flex-col items-center justify-center backdrop-blur-xl`}
+                  } transition-all duration-500 ease-in-out rounded-full w-10 h-10 flex flex-col items-center justify-center backdrop-blur-xl`}
                 >
-                  <Icon size={20} />
+                  <Icon size={18} />
                   <span className="sr-only text-xs">{scene.name}</span>
                 </button>
               );
@@ -166,9 +166,9 @@ export default function Overview() {
           <div className="flex flex-col items-center justify-end gap-4 h-full lg:px-10 px-6 py-6">
             <button
               onClick={toggleMute}
-              className="bg-light text-black rounded-full lg:w-12 w-10 lg:h-12 h-10 flex flex-col items-center justify-center backdrop-blur-xl"
+              className="bg-light text-black rounded-full w-10 h-10 flex flex-col items-center justify-center backdrop-blur-xl"
             >
-              {isMuted ? <VolumeXIcon size={20} /> : <Volume2Icon size={20} />}
+              {isMuted ? <VolumeXIcon size={18} /> : <Volume2Icon size={18} />}
               <span className="sr-only text-xs">Mute/Unmute</span>
             </button>
           </div>

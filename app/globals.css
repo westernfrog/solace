@@ -6,7 +6,21 @@
   body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: #121212;
+    --rgb: 255 255 255;
+    --opacity: 0.1;
+    --size: 5px 5px;
+    background-image: linear-gradient(
+      -45deg,
+      rgb(var(--rgb) / var(--opacity)) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgb(var(--rgb) / var(--opacity)) 50%,
+      rgb(var(--rgb) / var(--opacity)) 75%,
+      transparent 75%,
+      transparent 100%
+    );
+    background-size: var(--size);
+    background-color: black;
     color: #f7f7f7;
     overflow-x: hidden;
     font-family: "Inter", Arial, Helvetica, sans-serif;

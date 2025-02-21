@@ -2,10 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/modules/Header";
 
-const InterSans = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Solace",
@@ -16,7 +13,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${InterSans.variable} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
+        <svg width="0" height="0" className="absolute inset-0 z-0">
+          <defs>
+            <pattern
+              id="pattern-1"
+              patternUnits="userSpaceOnUse"
+              width="4"
+              height="4"
+            >
+              <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" stroke="#fff" />
+            </pattern>
+          </defs>
+        </svg>
         <Header />
         {children}
       </body>
