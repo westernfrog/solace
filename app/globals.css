@@ -6,7 +6,7 @@
   body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    --rgb: 255 255 255;
+    /* --rgb: 255 255 255;
     --opacity: 0.1;
     --size: 5px 5px;
     background-image: linear-gradient(
@@ -19,8 +19,8 @@
       transparent 75%,
       transparent 100%
     );
-    background-size: var(--size);
-    background-color: black;
+    background-size: var(--size); */
+    background-color: #010101;
     color: #f7f7f7;
     overflow-x: hidden;
     font-family: "Inter", Arial, Helvetica, sans-serif;

@@ -15,7 +15,7 @@ export default function Header() {
   console.log(pathname);
 
   return (
-    <header className="sticky inset-x-0 top-0 z-50 lg:px-10 px-6 py-6 mix-blend-difference">
+    <header className="sticky inset-x-0 top-0 z-50 lg:px-10 px-6 py-6 mix-blend-difference drop-shadow-2xl">
       <nav>
         <ul className="flex flex-wrap items-center justify-center lg:gap-8 gap-6">
           <li className="group">
